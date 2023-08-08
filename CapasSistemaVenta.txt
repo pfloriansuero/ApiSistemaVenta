@@ -1,0 +1,23 @@
+Estas son algunas de las capas comunes utilizadas en la arquitectura de capas de una aplicación:
+
+-Capa BLL (Business Logic Layer o Capa de Lógica de Negocio): Es responsable de la lógica de negocio de la aplicación. La capa BLL se sitúa entre la capa de 
+presentación o  controlador y la capa de acceso a datos. La capa BLL es donde se implementan las reglas de negocio y se realizan las operaciones de procesamiento 
+de datos.
+
+-Capa DAL (Data Access Layer o Capa de Acceso a Datos): Es responsable de interactuar con la fuente de datos subyacente, como una base de datos relacional o no 
+relacional. La capa DAL maneja las operaciones de lectura y escritura de datos. Esta capa se comunica con la capa BLL para realizar las operaciones de base de 
+datos necesarias.
+
+-Capa DTO (Data Transfer Object o Objeto de Transferencia de Datos): Es un objeto que se utiliza para transferir datos entre diferentes capas de la aplicación. 
+El DTO contiene información que se extrae de la capa de acceso a datos y se utiliza para actualizar los objetos de negocio en la capa BLL. El DTO puede contener 
+la información de un objeto o de una lista de objetos.
+
+-Capa IOC (Inversion of Control o Inversión de Control): Es una técnica para desacoplar el código de una aplicación. 
+El IOC es utilizado para permitir que las dependencias entre las diferentes capas de la aplicación sean manejadas por un contenedor de inyección de dependencias en 
+lugar de ser manejadas directamente por el código de la aplicación. Esto permite una mayor flexibilidad en el diseño de la aplicación y facilita el mantenimiento y la prueba de la aplicación.
+
+-Capa MODEL: Es la capa que define la estructura de los objetos de dominio de la aplicación. Estos objetos representan los datos que se almacenan en la aplicación 
+y definen la relación entre ellos.
+
+-Capa Utility: Es una capa opcional que se utiliza para almacenar código de utilidad que puede ser utilizado por varias capas de la aplicación. 
+Por ejemplo, se pueden almacenar clases de utilidad para formatear y validar los datos, manejar excepciones, etc.
